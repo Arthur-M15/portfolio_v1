@@ -39,6 +39,7 @@ h2 { margin-bottom: 0; font-size: clamp(2.25rem, 4vw, 4rem); }
 .section-heading { display: flex; justify-content: space-between; align-items: end; padding-bottom: 2rem; border-bottom: 1px solid var(--ink); }
 .section-heading .eyebrow { margin-bottom: .45rem; }
 .project-list { margin: 0; padding: 0; list-style: none; }
+.background { margin: 0; padding: 0; list-style: none; }
 .project { display: grid; grid-template-columns: minmax(0, 1fr) minmax(8rem, .55fr) auto; gap: 2rem; align-items: start; padding: 2rem 0; border-bottom: 1px solid var(--line); }
 .project h3 { margin-bottom: .35rem; font-size: 1.125rem; font-weight: 650; }
 .project p { margin-bottom: 0; color: var(--muted); }
