@@ -17,7 +17,7 @@ const ENABLE_ANALYTICS = true;
 const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
 ```
 
-Remplacez le Measurement ID avant toute mise en production. Tant que la valeur reste `G-XXXXXXXXXX`, aucun script Google Analytics n’est chargé. Mettre `ENABLE_ANALYTICS` à `false` désactive intégralement Analytics et le bandeau de consentement.
+Renseignez soit un Measurement ID GA4 (`G-XXXXXXXXXX`), soit un identifiant de conteneur Google Tag Manager (`GTM-XXXXXXXX`). Tant qu’aucun identifiant valide n’est renseigné, aucun script Google n’est chargé. Mettre `ENABLE_ANALYTICS` à `false` désactive intégralement Analytics et le bandeau de consentement.
 
 Le script ne charge GA4 qu’après acceptation explicite. Le choix (acceptation ou refus) expire au bout de six mois. Dans la propriété GA4, conservez uniquement les fonctionnalités de mesure, désactivez les signaux Google et les associations publicitaires, puis réglez la conservation des données sur deux mois.
 

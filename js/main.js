@@ -1,6 +1,7 @@
 /*
  * Configuration Analytics — modifiez uniquement ces constantes.
  * Mettre ENABLE_ANALYTICS à false désactive totalement le bandeau et Google Analytics.
+ * Accepte un Measurement ID GA4 (G-XXXX) ou un conteneur Google Tag Manager (GTM-XXXX).
  */
 const ENABLE_ANALYTICS = true;
 const GA_MEASUREMENT_ID = "GTM-5S3W59J6";
@@ -48,7 +49,13 @@ const MATRIX_PATTERNS = [
 ];
 
 function analyticsIsAvailable() {
-  return ENABLE_ANALYTICS && /^G-[A-Z0-9]+$/i.test(GA_MEASUREMENT_ID) && GA_MEASUREMENT_ID !== "G-XXXXXXXXXX";
+  return ENABLE_ANALYTICS && analyticsProvider() !== null;
+}
+
+function analyticsProvider() {
+  if (/^G-[A-Z0-9]+$/i.test(GA_MEASUREMENT_ID) && GA_MEASUREMENT_ID !== "G-XXXXXXXXXX") return "ga4";
+  if (/^GTM-[A-Z0-9]+$/i.test(GA_MEASUREMENT_ID)) return "gtm";
+  return null;
 }
 
 function loadAnalytics() {
@@ -56,16 +63,22 @@ function loadAnalytics() {
 
   window.__analyticsLoaded = true;
   window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag() { window.dataLayer.push(arguments); };
-  window.gtag("js", new Date());
-  window.gtag("config", GA_MEASUREMENT_ID, {
-    allow_google_signals: false,
-    allow_ad_personalization_signals: false
-  });
-
   const script = document.createElement("script");
   script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_MEASUREMENT_ID)}`;
+
+  if (analyticsProvider() === "gtm") {
+    window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    script.src = `https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(GA_MEASUREMENT_ID)}`;
+  } else {
+    window.gtag = function gtag() { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", GA_MEASUREMENT_ID, {
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false
+    });
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_MEASUREMENT_ID)}`;
+  }
+
   document.head.appendChild(script);
 }
 
