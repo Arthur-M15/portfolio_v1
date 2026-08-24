@@ -3,7 +3,7 @@
  * Mettre ENABLE_ANALYTICS à false désactive totalement le bandeau et Google Analytics.
  */
 const ENABLE_ANALYTICS = true;
-const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+const GA_MEASUREMENT_ID = "GTM-5S3W59J6";
 
 const CONSENT_STORAGE_KEY = "arthur-maquin-analytics-consent";
 const CONSENT_DURATION_MONTHS = 6;
