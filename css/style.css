@@ -39,12 +39,19 @@ h2 { margin-bottom: 0; font-size: clamp(2.25rem, 4vw, 4rem); }
 .section-heading { display: flex; justify-content: space-between; align-items: end; padding-bottom: 2rem; border-bottom: 1px solid var(--ink); }
 .section-heading .eyebrow { margin-bottom: .45rem; }
 .project-list { margin: 0; padding: 0; list-style: none; }
-.background { margin: 0; padding: 0; list-style: none; }
 .project { display: grid; grid-template-columns: minmax(0, 1fr) minmax(8rem, .55fr) auto; gap: 2rem; align-items: start; padding: 2rem 0; border-bottom: 1px solid var(--line); }
 .project h3 { margin-bottom: .35rem; font-size: 1.125rem; font-weight: 650; }
 .project p { margin-bottom: 0; color: var(--muted); }
 .project__meta { font-size: .9rem; }
 .project a { font-size: .9rem; white-space: nowrap; }
+
+.background { padding-bottom: clamp(5rem, 12vw, 10rem); }
+.background-list { margin: 0; padding: 0; list-style: none; }
+.background-item { display: grid; grid-template-columns: minmax(9rem, .45fr) minmax(0, 1fr); gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--line); }
+.background-item p { margin-bottom: .35rem; color: var(--muted); }
+.background-item h3 { margin-bottom: .35rem; font-size: 1.125rem; font-weight: 650; }
+.background-item .background-item__date { color: var(--ink); font-size: .9rem; font-weight: 600; }
+.background-item .background-item__school { margin-top: .5rem; margin-bottom: 0; padding-top: .55rem; border-top: 1px solid var(--line); font-size: .9rem; }
 
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
 .site-footer__inner { display: flex; justify-content: space-between; gap: 1.5rem; width: min(calc(100% - 3rem), var(--page-width)); margin: 0 auto; padding: 1.5rem 0 2rem; }
@@ -59,6 +66,7 @@ h2 { margin-bottom: 0; font-size: clamp(2.25rem, 4vw, 4rem); }
 .privacy-page section { padding: 1.75rem 0; border-top: 1px solid var(--line); }
 .privacy-page h2 { margin-bottom: 1rem; font-size: 1.6rem; }
 .privacy-page p:last-child { margin-bottom: 0; }
+.privacy-note { color: var(--muted); font-size: .9rem; }
 .privacy-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-top: 1.25rem; }
 .privacy-controls p { width: 100%; color: var(--muted); font-size: .9rem; }
 .button { border: 1px solid var(--ink); border-radius: 0; padding: .6rem .85rem; background: transparent; color: var(--ink); cursor: pointer; font: inherit; font-size: .9rem; }
@@ -82,6 +90,7 @@ h2 { margin-bottom: 0; font-size: clamp(2.25rem, 4vw, 4rem); }
   .introduction { grid-template-columns: 1fr; padding: 4rem 0; }
   .profile-image { width: min(15rem, 70%); }
   .project { grid-template-columns: 1fr; gap: .75rem; }
+  .background-item { grid-template-columns: 1fr; gap: .35rem; }
   .site-footer__inner { flex-direction: column; }
   .site-footer p { text-align: left; }
   .consent-banner { right: 1rem; bottom: 1rem; width: calc(100% - 2rem); }

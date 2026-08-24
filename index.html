@@ -1,90 +1,158 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio personnel d'Arthur Maquin.">
-    <title>Arthur Maquin — Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
-  </head>
-  <body>
-    <!-- Espace réservé à un futur logo ou à une future navigation. -->
-    <header class="site-header" aria-label="En-tête"></header>
 
-    <main class="page-shell">
-      <section class="introduction" aria-labelledby="intro-title">
-        <div class="introduction__copy">
-          <p class="eyebrow">Portfolio</p>
-          <!-- Remplacez librement ce texte par votre présentation. -->
-          <h1 id="intro-title">Arthur Maquin</h1>
-          <p class="introduction__text">Développeur logiciel backend. À la recherche de l'optimisation logicielle !</p>
-        </div>
-        <img class="profile-image" src="assets/profile.jpg" alt="Portrait d'Arthur Maquin" width="683" height="600">
-      </section>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio personnel d'Arthur Maquin.">
+  <title>Arthur Maquin — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
 
-      <section class="matrix-section" aria-label="Matrice interactive décorative">
-        <div class="matrix" data-matrix aria-hidden="true"></div>
-        <div class="mobile-divider" aria-hidden="true"></div>
-      </section>
+<body>
+  <!-- Espace réservé à un futur logo ou à une future navigation. -->
+  <header class="site-header" aria-label="En-tête"></header>
 
-      <section class="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="eyebrow">En ce moment</p>
-          <h2 id="projects-title">Projets</h2>
-        </div>
-
-        <!-- Chaque projet peut être remplacé ou supprimé directement dans ce fichier. -->
-        <ol class="project-list">
-          <li class="project">
-            <div>
-              <h3>Projet personnel</h3>
-              <p>Une idée en cours d’exploration, pensée pour rester claire et utile dès sa première version.</p>
-            </div>
-            <p class="project__meta">À définir</p>
-            <a href="#" aria-label="Voir le projet personnel">Voir le projet <span aria-hidden="true">↗</span></a>
-          </li>
-          <li class="project">
-            <div>
-              <h3>Expérience web</h3>
-              <p>Un espace de recherche autour d’interfaces légères et d’interactions discrètes.</p>
-            </div>
-            <p class="project__meta">HTML · CSS · JavaScript</p>
-            <a href="#" aria-label="Voir l'expérience web">Voir le projet <span aria-hidden="true">↗</span></a>
-          </li>
-          <li class="project">
-            <div>
-              <h3>Prototype</h3>
-              <p>Un prototype indépendant dont le périmètre et les détails évolueront prochainement.</p>
-            </div>
-            <p class="project__meta">En cours</p>
-            <a href="#" aria-label="Voir le prototype">Voir le projet <span aria-hidden="true">↗</span></a>
-          </li>
-        </ol>
-      </section>
-
-      <section class="background">
-        <div class="section-heading">
-          <p class="introduction__text">dsds !</p>
-        </div>
-        <div class="section-heading">
-          <p class="introduction__text">adads !</p>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <!-- Remplacez les deux URL suivantes par vos profils. -->
-        <nav aria-label="Liens externes">
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="privacy.html">Confidentialité &amp; statistiques</a>
-        </nav>
-        <p>© 2026 Arthur Maquin - Tous droits réservés</p>
+  <main class="page-shell">
+    <section class="introduction" aria-labelledby="intro-title">
+      <div class="introduction__copy">
+        <p class="eyebrow">Portfolio</p>
+        <h1 id="intro-title">Arthur Maquin</h1>
+        <p class="introduction__text">Développeur logiciel backend.</p>
       </div>
-    </footer>
+      <img class="profile-image" src="assets/profile.jpg" alt="Portrait d'Arthur Maquin" width="683" height="600">
+    </section>
 
-    <noscript><p class="noscript-notice">JavaScript est désactivé : la matrice interactive et les préférences de mesure d’audience ne sont pas disponibles.</p></noscript>
-  </body>
+    <section class="matrix-section" aria-label="Matrice interactive décorative">
+      <div class="matrix" data-matrix aria-hidden="true"></div>
+      <div class="mobile-divider" aria-hidden="true"></div>
+    </section>
+
+    <section class="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">En ce moment</p>
+        <h2 id="projects-title">Projets</h2>
+      </div>
+
+      <ol class="project-list">
+        <li class="project">
+          <div>
+            <h3>Développement d'une application d'analyse des marchés financiers</h3>
+            <p>Dans un monde qui évolue rapidement, il devient compliqué d'obtenir toute l'actualité et d'être informé
+              rapidement.
+              Le but de ce projet est de recueillir les articles de presse, le cours de la bourse et d'analyser le biais
+              du marché, afin de synthétiser les informations pour comprendre les variations du marché et, en cas de
+              contradiction entre le marché et mes convictions, de réagir rapidement. Le projet permet également
+              d'améliorer significativement la qualité de la réponse du bot via une analyse mathématique supplémentaire.
+            </p>
+          </div>
+          <p class="project__meta">Python, PostgreSQL, IA</p>
+          <!--<a href="#" aria-label="Voir le projet personnel">Voir le projet <span aria-hidden="true">↗</span></a>-->
+        </li>
+        <li class="project">
+          <div>
+            <h3>Création d'un jeu vidéo (en cours)</h3>
+            <p>Dans le monde du logiciel, la puissance de calcul disponible ne cesse d’augmenter, ce qui devrait nous
+              permettre de concevoir des applications toujours plus rapides et performantes.</p>
+            <p>Pourtant, dans le même temps, nous constatons souvent une augmentation de la complexité et de la lourdeur
+              des applications, ainsi qu’une moindre attention portée à l’efficacité des algorithmes
+              et à l’optimisation. Le manque de tests de performance et de charge contribue également à laisser ces
+              problèmes apparaître tardivement. C'est ce que résume la loi de Wirth : le logiciel ralentit plus vite que
+              le matériel n'accélère.</p>
+            <p>Ce projet de création de jeu vidéo est pour moi une façon de créer un univers qui me plait, mais aussi de
+              prouver que l'on peut concevoir
+              des applications qui ne nécessitent pas un matériel dernier cri.
+            </p>
+          </div>
+          <p class="project__meta">C#, Godot, OpenGL, Python</p>
+          <!--<a href="#" aria-label="Voir l'expérience web">Voir le projet <span aria-hidden="true">↗</span></a>-->
+        </li>
+        <li class="project">
+          <div>
+            <h3>Paint Neo (en cours)</h3>
+            <p>Étant un fan de la simplicité de paint 3D, je souhaite recoder l'application tout en apportant toutes les
+              fonctionnalités qui manquaient à mes besoins.
+            </p>
+            <p>Le projet est principalement destiné à Linux.</p>
+          </div>
+          <p class="project__meta">C#, Avalonia</p>
+          <!--<a href="#" aria-label="Voir le prototype">Voir le projet <span aria-hidden="true">↗</span></a>-->
+        </li>
+      </ol>
+    </section>
+
+    <section class="background" aria-labelledby="background-title">
+      <div class="section-heading">
+        <p class="eyebrow">Formation</p>
+        <h2 id="background-title">Parcours</h2>
+      </div>
+      <ol class="background-list">
+        <li class="background-item">
+          <p class="background-item__date">2021 – 2024</p>
+          <div>
+            <h3>Diplôme d’ingénieur en Informatique, Réseaux et Télécommunications</h3>
+            <p>Spécialité : capteurs radar et télécommunications</p>
+            <p class="background-item__school">IMT Atlantique de Brest</p>
+            <p>Sur ces 3 années les plus formateurs, j'ai étudié sur tous les aspects de l'Informatique. Depuis la
+              couche électronique, de la logique très bas niveau jusqu'au
+              développement logiciel très haut niveau, j'ai appris à prendre du recul sur le fonctionnement et le temps
+              de réponse de nos applications.
+              Les limitations matérielles lié au CPU réduisent fortement certaines applications dans le calcul massif
+              et, dans le cadre d'applications en temps réel
+              comme les capteurs embarqués, l'optimisation des algorithmes, l'accélération matérielle et l'utilisation
+              de propriétés mathématiques comme le "compressive sensing"
+              permettent de dépasser les débits de données à traiter.
+            </p>
+          </div>
+        </li>
+        <li class="background-item">
+          <p class="background-item__date">2023 – 2024</p>
+          <div>
+            <h3>Master I-MARS</h3>
+            <p>Double diplôme orienté sur la recherche en systèmes télécoms</p>
+            <p class="background-item__school">INSA Rennes / Institut Mines Télécoms</p>
+            <p>En dernière année d'école d'ingénieur, j'ai travaillé en collaboration avec des enseignants chercheurs
+              sur les méthodes
+              utilisées pour la détection du pattern de fréquences utilisées par l'éméteur. Le cursus implique des
+              connaissances en
+              télécommunications, mathématiques, électronique demande une rigueur quant à la recherche de l'information.
+            </p>
+          </div>
+        </li>
+        <li class="background-item">
+          <p class="background-item__date">2019 – 2021</p>
+          <div>
+            <h3>Diplôme Universitaire de Technologie Réseaux et Télécommunications</h3>
+            <p class="background-item__school">IUT La Rochelle</p>
+            <div>
+              <p>Pendant 2 ans, j'ai appris les bases des mathématiques appliquées au traitement du signal, les méthodes
+                pour
+                configurer les réseaux, les bases de l'électronique et de la programmation.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <nav aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/arthur-maquin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/Arthur-M15" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="privacy.html">Confidentialité &amp; statistiques</a>
+        <a href="legal.html">Mentions légales</a>
+      </nav>
+      <p>© 2026 Arthur Maquin - Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <noscript>
+    <p class="noscript-notice">JavaScript est désactivé : la matrice interactive et les préférences de mesure d’audience
+      ne sont pas disponibles.</p>
+  </noscript>
+</body>
+
 </html>
