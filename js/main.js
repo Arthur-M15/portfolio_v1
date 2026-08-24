@@ -4,7 +4,7 @@
  * Accepte un Measurement ID GA4 (G-XXXX) ou un conteneur Google Tag Manager (GTM-XXXX).
  */
 const ENABLE_ANALYTICS = true;
-const GA_MEASUREMENT_ID = "GTM-5S3W59J6";
+const GA_MEASUREMENT_ID = "G-WXTKJZXG13";
 
 const CONSENT_STORAGE_KEY = "arthur-maquin-analytics-consent";
 const CONSENT_DURATION_MONTHS = 6;
